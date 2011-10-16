@@ -9,7 +9,7 @@ require 'omniauth-testoauth2strategy'
 use Rack::Session::Cookie
 
 use OmniAuth::Builder do
-  provider :zencocoon, ENV['TESTOAUTH2STRATEGY_KEY'], ENV['TESTOAUTH2STRATEGY_SECRET']
+  provider :testoauth2strategy, "f592ee9096e25560e5cd7f2522713690", "9bf4cc4d94fba9fbb048aa0e3e2067cd"
 end
 
 get '/' do
